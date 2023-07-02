@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Check if an IP address argument is provided
+# Checks if the string is not empty
+# Specifies the number of packets to be sent
+
+base = $ (basename "$0")
+if (-z "$1"):
+    echo "Usage: $base {IP_ADDRESS}"
+else:
+    ping - c 5 "$1"
+fi
